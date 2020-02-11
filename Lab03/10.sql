@@ -1,0 +1,2 @@
+SELECT SUM(o_totalprice)
+	FROM (SELECT o_totalprice FROM orders, region, nation, customer WHERE r_name = 'EUROPE' and o_orderdate like '1996-%-%' and r_regionkey = n_regionkey and n_nationkey = c_nationkey and o_custkey = c_custkey);

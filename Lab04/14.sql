@@ -1,0 +1,1 @@
+Select R1.r_name, R2.r_name, SUM(.l_extendedprice + R2.l_)
